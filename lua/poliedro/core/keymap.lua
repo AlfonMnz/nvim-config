@@ -3,7 +3,7 @@ local keymap = function(mode, shortcut, command, description)
     vim.api.nvim_set_keymap(mode, shortcut, command, { noremap = true, silent = true, desc = description })
 end
 
-vim.g.mapleader = ','
+vim.g.mapleader = ' '
 
 -- POLIEDRO CUSTOM
 
