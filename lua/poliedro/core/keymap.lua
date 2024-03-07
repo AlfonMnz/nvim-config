@@ -10,7 +10,7 @@ vim.g.mapleader = ' '
 keymap('n', '<leader>ff', ':Telescope find_files<cr>', 'Tel: Find files')
 keymap('n', '<leader>d', ':NvimTreeFocus<cr>', 'Tree: Focus')
 keymap('n', '<leader>df', ':NvimTreeFindFile<cr>', 'Tree: Find file')
-keymap('n', '<leader>dc', ':NvimTreeClose<cr>', 'Tree: Close tree')
+keymap('n', '<leader>dc', ':NvimTreeToggle<cr>', 'Tree: Toggle tree')
 keymap('n', '<leader>s', ':w', 'Save file')
 keymap('n', '<leader>q', ':q', 'Close file')
 keymap('n', '<leader>so', ':so', 'SO')
