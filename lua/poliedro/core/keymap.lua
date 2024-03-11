@@ -1,6 +1,6 @@
 local keymap = function(mode, shortcut, command, description)
     description = description or ''
-    vim.api.nvim_set_keymap(mode, shortcut, command, { noremap = true, silent = true, desc = description })
+    vim.keymap.set(mode, shortcut, command, { noremap = true, silent = true, desc = description })
 end
 
 vim.g.mapleader = ','
@@ -25,7 +25,7 @@ keymap('n', '<leader>fr', ':Telescope oldfiles<CR>', 'Abrir archivos recientes')
 keymap('n', '<leader>FF', ':Telescope live_grep<CR>', 'Tel: Buscar en los archivos')
 keymap('n', '<leader>vv', ':vs<CR>', 'Split vertical')
 keymap('n', '<leader>bb', ':split<CR>', 'Split horizontal')
-keymap('n', 'L', '$', 'Go To: end of line')
-keymap('n', 'H', '0', 'Go To: start of line')
+keymap({'n', 'v'}, 'L', '$', 'Go To: end of line')
+keymap({'n','v'}, 'H', '0', 'Go To: start of line')
 keymap('t', '<Esc>', '<C-\\><C-n>', 'Exit terminal mode')
 
