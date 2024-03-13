@@ -5,7 +5,7 @@ return {
 		options = {
 			icons_enabled = true,
 			theme = 'auto',
-			globalstatus = false,
+			globalstatus = true,
 		}
 	}
 }
