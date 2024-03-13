@@ -1,6 +1,6 @@
 local keymap = function(mode, shortcut, command, description)
-    description = description or ''
-    vim.keymap.set(mode, shortcut, command, { noremap = true, silent = true, desc = description })
+	description = description or ''
+	vim.keymap.set(mode, shortcut, command, { noremap = true, silent = true, desc = description })
 end
 
 vim.g.mapleader = ','
@@ -25,15 +25,16 @@ keymap('n', '<leader>fr', ':Telescope oldfiles<CR>', 'Tel: Abrir archivos recien
 keymap('n', '<leader>FF', ':Telescope live_grep<CR>', 'Tel: Buscar en los archivos')
 keymap('n', '<leader>vv', ':vs<CR>', 'Split vertical')
 keymap('n', '<leader>bb', ':split<CR>', 'Split horizontal')
-keymap({'n', 'v'}, 'L', '$', 'Go To: end of line')
-keymap({'n','v'}, 'H', '0', 'Go To: start of line')
-keymap({'n', 'v'}, 'JJ', 'G', 'Go To: end of file')
-keymap({'n', 'v'}, 'KK', 'gg', 'Go To: init of file')
+keymap({ 'n', 'v' }, 'L', '$', 'Go To: end of line')
+keymap({ 'n', 'v' }, 'H', '0', 'Go To: start of line')
+keymap({ 'n', 'v' }, 'JJ', 'G', 'Go To: end of file')
+keymap({ 'n', 'v' }, 'KK', 'gg', 'Go To: init of file')
 keymap('t', '<Esc>', '<C-\\><C-n>', 'Exit terminal mode')
 keymap('v', 'J', ":m '>+1<CR>gv=gv", 'Move selected up')
 keymap('v', 'K', ":m '<-2<CR>gv=gv", 'Move selected down')
+keymap('n', '<leader>ef', "<cmd>lua vim.lsp.buf.format()<CR>", 'Lint: Fix')
+-- vim.api.nvim_set_keymap("n", "<leader>ef", "<cmd>lua vim.lsp.buf.formatting()<CR>", {noremap = true, silent = true})
 
 
 -- MAC CUSTOM
-	keymap('n', '<A-w>', '<C-w>', "Mode Ctrl+W")
-
+--	keymap('n', '<A-w>', '<C-w>', "Mode Ctrl+W")
