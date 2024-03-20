@@ -8,10 +8,10 @@ local options = {
     backspace = 'indent,eol,start',
     tabstop = 2,
     shiftwidth = 2,
-	softtabstop = 2,
-	ttyfast = true,
-	showmode = true,
-	wrap = false, 
+		softtabstop = 2,
+		ttyfast = true,
+		showmode = true,
+		wrap = false, 
 }
 
 for k, v in pairs(options) do

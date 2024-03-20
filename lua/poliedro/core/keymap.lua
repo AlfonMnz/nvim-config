@@ -33,6 +33,7 @@ keymap('t', '<Esc>', '<C-\\><C-n>', 'Exit terminal mode')
 keymap('v', 'J', ":m '>+1<CR>gv=gv", 'Move selected up')
 keymap('v', 'K', ":m '<-2<CR>gv=gv", 'Move selected down')
 keymap('n', '<leader>ef', "<cmd>lua vim.lsp.buf.format()<CR>", 'Lint: Fix')
+keymap({'n', 'v'}, 'ee', '<C-y>,', 'Emmet: expand all tags')
 -- vim.api.nvim_set_keymap("n", "<leader>ef", "<cmd>lua vim.lsp.buf.formatting()<CR>", {noremap = true, silent = true})
 
 
