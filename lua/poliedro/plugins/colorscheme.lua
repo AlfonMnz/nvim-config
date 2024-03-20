@@ -5,7 +5,7 @@ return {
 		priority = 1000,
 		opts = {style = "moon"},
 		config = function ()
-			vim.cmd.colorscheme("tokyonight")
+			-- vim.cmd.colorscheme("tokyonight")
 		end
 	},
 	{
@@ -23,7 +23,16 @@ return {
 		lazy = false,
 		priority = 1000,
 		config = function ()
-			-- vim.cmd.colorscheme("dracula")
+		--	vim.cmd.colorscheme("dracula")
+	
+		end
+	},
+	{
+		"nyoom-engineering/oxocarbon.nvim",
+		lazy=false,
+		priority = 1000,
+		config = function ()
+			vim.cmd.colorscheme("oxocarbon")
 		end
 	}
 }
