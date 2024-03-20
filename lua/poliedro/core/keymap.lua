@@ -3,7 +3,7 @@ local keymap = function(mode, shortcut, command, description)
 	vim.keymap.set(mode, shortcut, command, { noremap = true, silent = true, desc = description })
 end
 
-vim.g.mapleader = ','
+vim.g.mapleader = ' '
 
 -- POLIEDRO CUSTOM
 
@@ -14,8 +14,8 @@ keymap('n', '<leader>dt', ':NvimTreeToggle<cr>', 'Tree: Toggle tree')
 keymap('n', '<leader>s', ':w', 'Save file')
 keymap('n', '<leader>q', ':q', 'Close file')
 keymap('n', '<leader>so', ':so', 'SO')
-keymap('n', '<leader>th', ':split | terminal<cr>', 'Open H terminal')
-keymap('n', '<leader>tv', ':vsplit | terminal<cr>', 'Open V terminal')
+keymap('n', '<leader>th', ':split | terminal<cr>', 'Open ABAJO terminal')
+keymap('n', '<leader>tv', ':vsplit | terminal<cr>', 'Open IZQUIERDA terminal')
 keymap('v', '<leader>dd', 'yyp', 'Duplicate line')
 keymap('n', '<leader><', ':resize -5<CR>', '-5 horizontal')
 keymap('n', '<leader>>', ':resize +5<CR>', '+5 horizontal')
@@ -34,6 +34,7 @@ keymap('v', 'J', ":m '>+1<CR>gv=gv", 'Move selected up')
 keymap('v', 'K', ":m '<-2<CR>gv=gv", 'Move selected down')
 keymap('n', '<leader>ef', "<cmd>lua vim.lsp.buf.format()<CR>", 'Lint: Fix')
 keymap({'n', 'v'}, 'ee', '<C-y>,', 'Emmet: expand all tags')
+keymap('n', 'U', '<C-r>', 'Redo')
 -- vim.api.nvim_set_keymap("n", "<leader>ef", "<cmd>lua vim.lsp.buf.formatting()<CR>", {noremap = true, silent = true})
 
 
