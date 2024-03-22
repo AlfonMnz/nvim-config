@@ -12,6 +12,7 @@ local options = {
 		ttyfast = true,
 		showmode = true,
 		wrap = false, 
+--		foldmethod='indent',
 }
 
 for k, v in pairs(options) do
