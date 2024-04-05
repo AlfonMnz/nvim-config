@@ -23,7 +23,7 @@ return {
 		lazy = false,
 		priority = 1000,
 		config = function ()
-		--	vim.cmd.colorscheme("dracula")
+			-- vim.cmd.colorscheme("dracula")
 	
 		end
 	},
@@ -32,7 +32,23 @@ return {
 		lazy=false,
 		priority = 1000,
 		config = function ()
-			vim.cmd.colorscheme("oxocarbon")
+			-- vim.cmd.colorscheme("oxocarbon")
+		end
+	},
+	{
+		'navarasu/onedark.nvim',
+		lazy = false,
+		priority = 1000,
+		config = function ()
+			-- vim.cmd.colorscheme("onedark")
+		end
+	},
+	{ 
+		"catppuccin/nvim", 
+		name = "catppuccin", 
+		priority = 1000,
+		config = function ()
+			vim.cmd.colorscheme("catppuccin-macchiato")
 		end
 	}
 }
